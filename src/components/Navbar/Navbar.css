@@ -1,0 +1,69 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  font-family: Frank Ruhl Libre;
+}
+/*Start Navbar */
+nav.navbar {
+  background: #b88e57;
+  height: 70px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 18px 0;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  transition: 0.3 ease-in-out;
+}
+nav.navbar a.navbar-brand {
+  width: 10%;
+}
+nav.navbar .navbar-nav .navbar-link {
+  font-weight: 400;
+  padding: 0 30px;
+  color: #fff;
+  opacity: 0.75;
+  font-size: 22px;
+  letter-spacing: 0.8px;
+  margin-left: 15px;
+}
+nav.navbar .navbar-nav a.navbar-link:hover,
+nav.navbar .navbar-nav a.navbar-link.active {
+  opacity: 1;
+}
+div.logo::before {
+  content: "";
+  width: 120px;
+  height: 120px;
+  padding: 0;
+  top: -20px;
+  left: 50px;
+  background-color: #fdddab;
+  margin: 0;
+  z-index: 2;
+  border-radius: 50%;
+  position: absolute;
+}
+@media screen and (max-width: 992px) {
+  nav.navbar .navbar-nav .navbar-link {
+    font-size: 18px;
+    padding: 0 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+  }
+}
+@media screen and (max-width: 576px) {
+  nav.navbar .navbar-nav .navbar-link {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+  }
+}

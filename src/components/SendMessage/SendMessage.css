@@ -1,0 +1,116 @@
+.send-left {
+  float: left;
+}
+.send-left h2 {
+  padding: 40px 10px 10px 0;
+  font-size: 65px;
+  color: rgba(55, 39, 35, 1);
+}
+.send-left img {
+  height: 410px;
+  width: 500px;
+}
+.send-right {
+  float: right;
+  background: rgba(254, 205, 129, 0.6);
+  width: 500px;
+  height: 450px;
+  border-radius: 30px;
+  transform: translate(-30%, 10%);
+  margin-top: 10px;
+  text-align: center;
+}
+.send-right form {
+  margin-top: 10px;
+}
+.send-right form input {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 40px;
+  border: 1px solid rgba(184, 142, 87, 1);
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(55, 39, 35, 1);
+  outline: none;
+  letter-spacing: 0em;
+}
+.send-right form textarea {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(55, 39, 35, 1);
+  border: none;
+  outline: none;
+  letter-spacing: 0em;
+  border: 1px solid rgba(184, 142, 87, 1);
+}
+.send-right form button {
+  color: rgba(255, 255, 255, 1);
+  font-size: 25px;
+  padding: 5px 50px;
+  position: absolute;
+  bottom: 5%;
+  left: 35%;
+  background: rgba(184, 142, 87, 1);
+  border-radius: 40px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+  .send-left h2 {
+    font-size: 60px;
+  }
+  .send-left img {
+    width: 450px;
+    height: 425px;
+  }
+  .send-right {
+    position: absolute;
+    width: 450px;
+    transform: translate(110%, 15%);
+  }
+}
+@media screen and (max-width: 768px) {
+  .send-left h2 {
+    font-size: 50px;
+  }
+  .send-left img {
+    width: 350px;
+    height: 425px;
+  }
+  .send-right {
+    position: absolute;
+    width: 380px;
+    transform: translate(92%, 15%);
+  }
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .send-left img {
+    display: none;
+  }
+  .send-right {
+    position: absolute;
+    width: 370px;
+    transform: translate(2%, 20%);
+  }
+  .send-left h2 {
+    font-size: 40px;
+    transform: translate(30%, 5%);
+  }
+  .send-right form button {
+    left: 25%;
+  }
+}

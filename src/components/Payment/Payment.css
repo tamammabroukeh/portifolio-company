@@ -1,0 +1,150 @@
+.form-payment {
+  background: rgba(254, 205, 129, 0.6);
+  width: 500px;
+  height: 250px;
+  padding: 20px;
+  border-radius: 30px;
+}
+.form-payment .input-container {
+  position: relative;
+}
+.form-payment .input-container svg,
+.form-payment .input-container img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 12px;
+  right: 50px;
+}
+.form-payment .input-container .icons {
+  display: inline-block;
+}
+.form-payment .input-container input {
+  text-align: left;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 20px;
+  outline: none;
+  width: 100%;
+  border: 1px solid rgba(184, 142, 87, 1);
+}
+.form-payment .date-cvc {
+  width: 100%;
+  font-size: 18px;
+}
+.form-payment .date-cvc > input {
+  width: 70%;
+}
+.form-payment .date-cvc input {
+  display: inline-block;
+  font-size: 25px;
+  border: 1px solid rgba(184, 142, 87, 1);
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin: 0;
+}
+.form-payment input.cvc {
+  width: 25%;
+}
+.sec-left {
+  float: left;
+}
+.sec-right {
+  float: right;
+  transform: translateY(10%);
+}
+.sec-left img {
+  height: calc(100vh - 70px);
+  margin-top: -10px;
+}
+.sec-right h2 {
+  color: rgba(185, 129, 85, 1);
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.sec-right span {
+  padding: 10px;
+  color: #000;
+}
+.sec-right span a {
+  color: rgba(184, 142, 87, 1);
+}
+.form-payment button {
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 30px;
+  outline: none;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(184, 142, 87, 1);
+  transform: translate(80%, 50%);
+  margin: -10px;
+  border: none;
+}
+@media screen and (max-width: 992px) {
+  .sec-right {
+    position: absolute;
+    transform: translate(50%, 20%);
+  }
+}
+@media screen and (max-width: 768px) {
+  .sec-left img {
+    width: 370px;
+    height: calc(100vh - 70px);
+    margin-top: -10px;
+  }
+  .sec-right {
+    position: absolute;
+    transform: translate(60%, 40%);
+  }
+  .form-payment {
+    width: 370px;
+  }
+  .form-payment .date-cvc > input {
+    width: 63%;
+  }
+  .form-payment input.cvc {
+    width: 30%;
+  }
+  .form-payment button {
+    transform: translate(50%, 40%);
+  }
+  .sec-right h2 {
+    color: rgba(185, 129, 85, 1);
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .form-payment {
+    width: 400px;
+  }
+  .form-payment .date-cvc > input {
+    width: 64%;
+  }
+  .form-payment input.cvc {
+    width: 30%;
+  }
+  .form-payment button {
+    transform: translate(50%, 40%);
+  }
+  .sec-right {
+    position: absolute;
+    transform: translate(-12%, 40%);
+  }
+  .sec-right h2 {
+    color: rgba(185, 129, 85, 1);
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .sec-right span {
+    padding: 10px;
+    color: #fff;
+  }
+  .sec-right span a {
+    color: #fff;
+  }
+}

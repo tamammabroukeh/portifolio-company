@@ -1,0 +1,57 @@
+.back {
+  margin-top: -45px;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.about-left h2 {
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  text-align: center;
+  font-size: 60px;
+}
+.about-left {
+  float: left;
+}
+.about-right {
+  float: right;
+  left: 50%;
+  top: 17%;
+  border-radius: 30px;
+  width: 500px;
+  height: 450px;
+  position: absolute;
+  background-color: rgba(254, 205, 129, 0.6);
+}
+.about-right div {
+  margin: 30px auto;
+  text-align: center;
+  color: rgba(55, 39, 35, 1);
+  font-size: 25px;
+}
+@media screen and (max-width: 992px) {
+  .about-right {
+    left: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-right {
+    left: 32%;
+  }
+  .about-left h2 {
+    left: 0%;
+    top: 23%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .about-right {
+    left: 5%;
+    width: 400px;
+    height: 350px;
+    top: 30%;
+  }
+  .about-left h2 {
+    left: 25%;
+  }
+}

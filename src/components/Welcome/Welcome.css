@@ -1,0 +1,60 @@
+.welcome {
+  color: #000;
+  font-size: 80px;
+  color: #372723;
+  text-transform: uppercase;
+  transform: translate(40%, 20%);
+}
+div .img-welcome {
+  height: 535px;
+}
+.sec-welcome .text-container {
+  float: left;
+  left: 50%;
+}
+.sec-welcome .image-container {
+  float: right;
+}
+.form-container {
+  transform: translate(40%, 20%);
+}
+.img-phone {
+  display: none;
+}
+@media screen and (max-width: 992px) {
+  .form-container,
+  .welcome {
+    transform: translate(20%, 20%);
+  }
+}
+@media screen and (max-width: 768px) {
+  div .img-welcome {
+    width: 365px;
+  }
+  .form-container {
+    transform: translate(7%, 20%);
+  }
+  .welcome {
+    transform: translate(7%, 50%);
+    font-size: 50px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .bg-ground {
+    height: 100vh;
+    background-image: url("../../assests/imgs/Home.png");
+    background-size: cover;
+  }
+  .sec-welcome .image-container {
+    display: none;
+  }
+  .form-container {
+    transform: translate(5%, 20%);
+  }
+  .welcome {
+    transform: translate(5%, 50%);
+    font-size: 50px;
+    text-align: center;
+  }
+}

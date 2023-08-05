@@ -1,0 +1,62 @@
+.services-icon {
+  margin-top: -45px;
+  background: rgba(184, 142, 87, 0.5);
+}
+.services-icon div {
+  text-align: center;
+}
+.services-icon svg {
+  width: 70px;
+  height: 70px;
+}
+.services-icon span {
+  font-size: 50px;
+  color: rgba(55, 39, 35, 1);
+}
+.services {
+  position: relative;
+  background-color: rgba(254, 205, 129, 0.6);
+}
+.services img {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.service img {
+  width: 37%;
+  height: auto;
+}
+.row {
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.service {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.service p {
+  color: rgba(55, 39, 35, 1);
+  font-size: 30px;
+  padding: 10px 0;
+  border-radius: 30px;
+  background: rgba(185, 129, 85, 0.8);
+}
+@media screen and (max-width: 576px) {
+  .service p {
+    font-size: 20px;
+  }
+  .service img {
+    width: 100%;
+  }
+  .row {
+    margin-top: 30px;
+  }
+}

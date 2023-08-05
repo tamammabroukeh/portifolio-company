@@ -1,0 +1,146 @@
+/*  .container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+} 
+ */
+.signup-container {
+  margin-top: 30px;
+}
+.form-Sigup {
+  background: rgba(254, 205, 129, 0.6);
+  width: 380px;
+  margin: 0 auto;
+  padding: 15px 40px;
+  border-radius: 40px;
+  float: right;
+}
+h2 {
+  font-size: 40px;
+  font-weight: 400;
+  color: rgba(55, 39, 35, 1);
+  letter-spacing: 0em;
+  text-align: center;
+}
+label {
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+}
+label span {
+  margin-left: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-Sigup input {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(55, 39, 35, 1);
+  border: none;
+  outline: none;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.form-Sigup button {
+  color: #fff;
+  margin-top: 10px;
+  padding: 5px 25px;
+  background: rgba(184, 142, 87, 1);
+  border-radius: 40px;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+.new-acc {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(55, 39, 35, 1);
+}
+.new-acc span a {
+  margin-left: 5px;
+  color: rgba(255, 255, 255, 1);
+}
+
+/*lef*/
+.wel {
+  color: #fff;
+  position: absolute;
+  font-size: 70px;
+  order: 1;
+  text-transform: uppercase;
+  top: 20%;
+  margin-left: 30px;
+}
+.sec-wel {
+  float: left;
+  margin-top: -24px;
+  background-size: cover;
+  height: calc(100vh - 65px);
+  z-index: 1;
+  position: relative;
+  width: 500px;
+  background-image: url("../../assests/imgs/rowan-heuvel-sAB4BWrQ4Y4-unsplash\ 1_New.png");
+}
+@media screen and (max-width: 992px) {
+  .sec-wel {
+    width: 450px;
+  }
+  .form-Sigup {
+    width: 350px;
+    margin: 0 auto;
+    padding: 15px 40px;
+    border-radius: 40px;
+    float: right;
+    position: absolute;
+    right: 10%;
+  }
+  .form-Sigup input {
+    border-radius: 30px;
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sec-wel {
+    width: 450px;
+    background-image: url("../../assests/imgs/rowan-heuvel-sAB4BWrQ4Y4-unsplash\ 1_New.png");
+  }
+  .form-Sigup {
+    transform: translateX(21%);
+    width: 330px;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 576px) {
+  .wel {
+    color: transparent;
+  }
+  .sec-wel {
+    background-image: url("../../assests/imgs/Sign\ up.png");
+    background-size: cover;
+    width: 100%;
+  }
+  .form-Sigup {
+    position: absolute;
+    z-index: 1;
+    transform: translate(5%, 5%);
+  }
+  .form-Sigup input {
+    padding: 10px;
+    font-size: 25px;
+  }
+}

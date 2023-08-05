@@ -1,0 +1,65 @@
+.faq-left {
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translateY(50%);
+}
+.faq-left h2 {
+  color: rgba(55, 39, 35, 1);
+  font-size: 60px;
+}
+.faq-right {
+  float: right;
+  border-radius: 30px;
+  width: 500px;
+  height: 450px;
+  background-color: rgba(254, 205, 129, 0.6);
+  padding: 30px;
+  margin-left: 50px;
+}
+.faq-right h2 {
+  color: rgba(55, 39, 35, 1);
+  font-size: 25px;
+  left: 0;
+  text-align: left;
+  font-weight: bold;
+}
+.Ques {
+  padding: 5px;
+}
+.faq-right p {
+  font-size: 20px;
+  color: rgba(55, 39, 35, 1);
+}
+.faq-back img {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+.faq {
+  position: absolute;
+  padding: 40px;
+  left: 20%;
+}
+@media screen and (max-width: 992px) {
+  .faq-right {
+    transform: translateY(-30%);
+  }
+  .faq-left {
+    transform: translate(-50%, 70%);
+  }
+}
+@media screen and (max-width: 768px) {
+  .faq-right {
+    width: 385px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .faq-right {
+    width: 400px;
+    transform: translateX(-40%);
+  }
+  .faq-left {
+    transform: translateX(-10%);
+  }
+}
